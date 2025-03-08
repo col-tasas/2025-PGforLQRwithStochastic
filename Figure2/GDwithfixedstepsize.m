@@ -15,7 +15,7 @@ Q=0.001*eye(3); % weighting matrix Q
 R=1*eye(3); % weighting matrix R
 [Pstar1,K_initial]=idare(A,B,50*Q,R);
 K_initial=-K_initial;
-episode=5;
+episode=100;
 num_BS=numel(AmpNoise_forloop_BS);
 %% Algorithm
 % K optimal
