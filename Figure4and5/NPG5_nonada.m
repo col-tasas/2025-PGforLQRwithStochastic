@@ -28,7 +28,7 @@ ck=zeros(numup,iteration);  % normalized sub-optimality gap (only row 1 is used 
 n=500;    % number of perturbed rollouts used for gradient/covariance estimation
 l=20;     % rollout length
 r=0.01;   % perturbation radius
-
+a=1; b=2;c=25000;
 pk=dlyap((A+B*K_initial)',Q+K_initial'*R*K_initial);
 eta=a / (b + c*trace(pk));
 %% Natural Policy Gradient (NPG)
